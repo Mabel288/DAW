@@ -1,0 +1,730 @@
+ERROR - 2024-12-10 13:28:18 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:28:18 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:28:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:28:18 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:28:32 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:28:32 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:28:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:28:32 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:32:42 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:32:42 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:32:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:32:42 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:32:46 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:32:46 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:32:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:32:46 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:33:35 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:33:35 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:33:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:33:35 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:34:29 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:34:29 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:34:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:34:29 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:35:33 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:35:33 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:35:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:35:33 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:38:50 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:38:50 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:38:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:38:50 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:38:51 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:38:51 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:38:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:38:51 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:38:52 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:38:52 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:38:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:38:52 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:39:33 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:39:33 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:39:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:39:33 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 13:39:37 --> ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^ in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:193
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 193)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor...')
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor...')
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->tarea()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 13:39:37 --> CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+[Method: GET, Route: tarea]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:39:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 198.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-10 13:39:37 --> [Caused by] ErrorException: pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 193.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  no existe la relación «autores»
+LINE 1: SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5
+                                                   ^', 'C:\\xampp\\htdocs\\api\\system\\Database\\Postgre\\Connection.php', 193)
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(193): pg_query(Object(PgSql\Connection), 'SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\Postgre\Connection->execute('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 5 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('SELECT id_autor, nombre, nacionalidad FROM autores LIMIT 5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tarea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-10 15:02:27 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres� in C:\xampp\htdocs\api\system\Database\Postgre\Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'C:\\xampp\\htdocs...', 78)
+#1 C:\xampp\htdocs\api\system\Database\Postgre\Connection.php(78): pg_connect('host=localhost ...')
+#2 C:\xampp\htdocs\api\system\Database\BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 C:\xampp\htdocs\api\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\api\app\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#5 C:\xampp\htdocs\api\system\CodeIgniter.php(933): App\Controllers\Home->consultarbasedatos()
+#6 C:\xampp\htdocs\api\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\api\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\api\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\api\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\api\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-12-10 15:02:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  la autentificaci�n password fall� para el usuario �postgres�
+[Method: GET, Route: consultarbasedatos]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Home.php(25): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+        p.nombre AS nombre_proyecto,
+        p.descripcion AS descripcion_proyecto,
+        p.estado AS estado_proyecto,
+        COUNT(t.id) AS numero_tareas_asociadas
+        FROM proyectos p
+        LEFT JOIN tareas t ON p.id = t.id
+        GROUP BY p.id')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->consultarbasedatos()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
